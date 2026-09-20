@@ -19,7 +19,7 @@ pkg update && pkg upgrade -y
 
 pkg install python git bluez wireless-tools networkmanager -y
 
-git clone [https://github.com/yourusername/AirBlue-Shield.git](https://github.com/yourusername/AirBlue-Shield.git)
+git clone https://github.com/Ravannan777/airblue_shield.git
 
 
 pip install -r requirements.txt
