@@ -15,9 +15,9 @@
 ## 📦 Installation & Setup
 
 ### For Termux (Android):
-pkg update && pkg upgrade -y
+pkg update && pkg upgrade 
 
-pkg install python git bluez wireless-tools networkmanager -y
+pkg install python git bluez wireless-tools networkmanager 
 
 git clone https://github.com/Ravannan777/airblue_shield.git
 
