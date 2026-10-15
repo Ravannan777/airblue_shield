@@ -27,9 +27,7 @@ class AirBlueShield:
         self.is_termux = os.path.exists("/data/data/com.termux/files/home")
         self.tool_name = "AirBlue-Shield"
         self.version = "3.5.0"
-        self.developer_name = "SREENAND "  # നിങ്ങളുടെ പേര് അല്ലെങ്കിൽ പ്രൊഫൈൽ ഇവിടെ നൽകാം
-        
-        # മെയിൻ സ്ക്രീനിൽ ടൂളിന്റെ പേര്, വേർഷൻ, ഡെവലപ്പർ പേര് എന്നിവ ഉൾപ്പെടുത്തിയിരിക്കുന്നു
+        self.developer_name = "SREENAND " 
         self.banner = f"""
         =========================================================
            {self.tool_name} : CYBERSECURITY THREAT DETECTOR v{self.version}
@@ -65,7 +63,6 @@ class AirBlueShield:
                     parts = line.split(":", 1)
                     if len(parts) > 1:
                         auth_val = parts[1].strip()
-                        # ഓപ്പൺ ആണോ ക്ലോസ്ഡ് (Secured) ആണോ എന്ന് എളുപ്പത്തിൽ മനസ്സിലാക്കാൻ
                         if "Open" in auth_val:
                             current_net["auth"] = "Open (Unsecured)"
                         else:
